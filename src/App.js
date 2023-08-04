@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Layout from './components/Layout/Layout';
+import About from './pages/About';
+import Tech from './pages/Tech';
+import Projects from './pages/Project';
+import Education from './pages/Education';
+import Contact from './pages/Contact';
+import ScrollToTop from "react-scroll-to-top";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Mobilebar from './components/Mobilebar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ToastContainer/>
+    <Mobilebar/>
+      <Layout/>
+      <About/>
+      <Education/>
+      <Tech/>
+      <Projects/>
+      <Contact/>
+      <ScrollToTop smooth style={{backgroundColor:'gray', color:'white' , BorderRadius:'100px'}} />
+    </>
   );
 }
 
