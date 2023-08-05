@@ -20,21 +20,21 @@ const Contact = () => {
       if (!name || !email || !msg) {
         toast.error("PLease Provide all fields");
       }
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {
-        name,
-        email,
-        msg,
-      });
+  //     const res = await axios.post("/api/v1/portfolio/sendEmail", {
+  //       name,
+  //       email,
+  //       msg,
+  //     });
       
       
-      if (res.data.success) {
-        toast.success(res.data.message);
-        setname("");
-        setEmail("");
-        setMsg("");
-      } else {
-        toast.error(res.data.message);
-      }
+  //     if (res.data.success) {
+  //       toast.success(res.data.message);
+  //       setname("");
+  //       setEmail("");
+  //       setMsg("");
+  //     } else {
+  //       toast.error(res.data.message);
+  //     }
     } catch (error) {
       console.log(error);
     }
