@@ -20,7 +20,8 @@ const Main = () => {
           <div className='home-buttons ' >
             {/* <button className='hire-me'> Hire Me </button> */}
             <a className = 'cv' href = 'https://drive.google.com/drive/folders/1Ln564f7SfTzWL2CsyCsrA9KMJEG-7_Jr?usp=drive_link' target='_blank' download="shubham_resume.pdf"> Download CV </a>
-            <a className = 'hire-me' href = 'https://github.com/shubham-mohit' target='_blank' rel='noreferrer'> Hire Me </a>
+            <a className = 'hire-me' href = 'href="http://api.whatsapp.com/send?phone=8698568231'
+              target="_blank"  rel='noreferrer'> Hire Me </a>
             {/* <button className='cv'> Download cv </button> */}
           </div>
         </div>
